@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+
 import 'package:cs_tech_assessment/services/list_services.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,6 @@ class PieChartScreen extends StatefulWidget {
 class _PieChartScreenState extends State<PieChartScreen> {
   int touchedIndex = -1;
 
-  // Variables to store API response data
   int pending = 0;
   int done = 0;
   int scheduled = 0;
@@ -94,7 +93,6 @@ class _PieChartScreenState extends State<PieChartScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top Summary Card
               Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
@@ -166,7 +164,7 @@ class _PieChartScreenState extends State<PieChartScreen> {
 
               const SizedBox(height: 30),
 
-              // Pie Chart
+          
               Center(
                 child: SizedBox(
                   width: 250,
@@ -199,7 +197,6 @@ class _PieChartScreenState extends State<PieChartScreen> {
 
               const SizedBox(height: 50),
 
-              // Status Cards
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -208,37 +205,37 @@ class _PieChartScreenState extends State<PieChartScreen> {
                     label: 'Pending',
                     count: pending,
                     backgroundColor: Colors.orange.shade100,
-                    labelColor: Colors.black, // Set label text color to black
-                    countColor: Colors.black, // Set count text color to black
+                    labelColor: Colors.black, 
+                    countColor: Colors.black, 
                   ),
                   _buildStatusCard(
                     context,
                     label: 'Done',
                     count: done,
                     backgroundColor: Colors.green.shade100,
-                    labelColor: Colors.black, // Set label text color to black
-                    countColor: Colors.black, // Set count text color to black
+                    labelColor: Colors.black, 
+                    countColor: Colors.black, 
                   ),
                   _buildStatusCard(
                     context,
                     label: 'Schedule',
                     count: scheduled,
                     backgroundColor: Colors.deepPurple.shade100,
-                    labelColor: Colors.black, // Set label text color to black
-                    countColor: Colors.black, // Set count text color to black
+                    labelColor: Colors.black, 
+                    countColor: Colors.black, 
                   ),
                 ],
               ),
 
               const SizedBox(height: 50),
 
-              // Call Now Button
+             
               SizedBox(
                 width: double.infinity,
                 height: 55,
                 child: ElevatedButton(
                   onPressed: () {
-                    // TODO: Start Calling Action
+                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue.shade700,
@@ -263,7 +260,7 @@ class _PieChartScreenState extends State<PieChartScreen> {
     );
   }
 
-  /// Pie chart sections based on fetched data
+
   List<PieChartSectionData> showingSections() {
     final data = [pending, done, scheduled];
     final colors = [
@@ -292,14 +289,13 @@ class _PieChartScreenState extends State<PieChartScreen> {
     });
   }
 
-  /// Custom widget for status cards
   Widget _buildStatusCard(
     BuildContext context, {
     required String label,
     required int count,
     required Color backgroundColor,
-    required Color labelColor, // New parameter for label color
-    required Color countColor, // New parameter for count color
+    required Color labelColor, 
+    required Color countColor, 
   }) {
     return Expanded(
       child: Container(
@@ -315,7 +311,7 @@ class _PieChartScreenState extends State<PieChartScreen> {
             Text(
               label,
               style: TextStyle(
-                color: labelColor, // Use the new labelColor
+                color: labelColor, 
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
@@ -324,7 +320,7 @@ class _PieChartScreenState extends State<PieChartScreen> {
             Text(
               '$count Calls',
               style: TextStyle(
-                color: countColor, // Use the new countColor
+                color: countColor,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),

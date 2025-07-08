@@ -24,7 +24,7 @@ class TwoMinuteChallenge extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Blue Welcome Card
+            
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
@@ -61,7 +61,6 @@ class TwoMinuteChallenge extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // Blue Container with text and image
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
@@ -71,7 +70,7 @@ class TwoMinuteChallenge extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Text
+                
                   Padding(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 16,
