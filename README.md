@@ -1,4 +1,5 @@
-# 📊 Pie Chart Dashboard App
+# 📊 Calley_App
+[Demo Video](https://drive.google.com/file/d/196siGB6Byw_XcreTMVlf8CHSlAssoC-w/view?usp=sharing)
 
 This is a simple dashboard app made using **Flutter** that shows a pie chart of calling stats like Pending, Done, and Scheduled calls.  
 It's designed in a user-friendly way and shows real-time data fetched from APIs.
@@ -33,12 +34,30 @@ It's designed in a user-friendly way and shows real-time data fetched from APIs.
 - Using arguments with `Navigator.pushNamed`
 
 ---
+## Getting Started
 
-## 📸 Demo Video
+Follow the steps below to run the project locally:
 
-Watch a short demo here:  
-👉 [Demo Video](https://youtu.be/demo-video-link)  
-*(Replace this link with your actual YouTube or Drive video)*
+### 1. Clone the Repository
+
+```bash
+git clone <[Shopnest](https://github.com/RageRaghav/ShopNest/)>
+cd your-repo-folder
+```
+
+### 1. Add Dependencies
+
+```bash
+flutter pub get
+```
+
+### 3. Run the App
+
+```bash
+flutter run
+```
+
+
 
 ---
 
