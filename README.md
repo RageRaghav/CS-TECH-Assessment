@@ -41,7 +41,7 @@ Follow the steps below to run the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone <(https://github.com/RageRaghav/CS-TECH-Assessment/)>
+git clone "https://github.com/RageRaghav/CS-TECH-Assessment/"
 cd your-repo-folder
 ```
 
